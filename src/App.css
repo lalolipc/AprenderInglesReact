@@ -22,7 +22,7 @@ body {
 .nota{
   position: relative;
   overflow: hidden;
-  width: 110px;
+  width: 90px;
   height: 180px;
   display: inline-block;
   border-radius: 4px;
@@ -36,7 +36,11 @@ body {
 }
 
 #red{
-  background-color:rgb(233, 19, 19);
+  background-color:#c20000;
+}
+
+#orange{
+  background-color: #fc5500;
 }
 #blue{
   background-color: blue;

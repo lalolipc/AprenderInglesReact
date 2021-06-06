@@ -11,6 +11,13 @@ function App() {
       link: 'https://www.wordreference.com/audio/en/uk/general/en070562.mp3',
       sostenido: true,
       colorfondo:"red"
+    },{
+      
+        nombre: 'ORANGE',
+        link: 'https://www.wordreference.com/audio/en/us/us/en060094.mp3',
+        sostenido: true,
+        colorfondo:"orange"
+      
     },
     {
       nombre: 'YELLOW',
