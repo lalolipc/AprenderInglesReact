@@ -62,13 +62,15 @@ function App() {
 
   setTimeout(()=>{
     setSonando('')
-  },200)
+  },1500)
 
   return (
     <div>
       <div className="titulo">
         <h1>Colores en ingles 😀</h1>
-        { sonando && <h3> {sonando}</h3>}
+       
+
+{ sonando && <h3> {sonando}</h3>}
       </div>
       <div className="container">
         {notas.map(nota => (
@@ -78,7 +80,6 @@ function App() {
             id={nota.colorfondo}
             onClick={() => handleClick(nota)}
           >
-            {/* {nota.sostenido ? <div className="negra"></div>: null} */}
             
           </div>
         ))}

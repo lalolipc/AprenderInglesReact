@@ -3,10 +3,7 @@ body {
 }
 
 .container{
-  display: flex;
-  margin: 30px auto;
-  justify-content: center;
-  width: 70%;
+  width: 100%;
 }
 
 .titulo{
@@ -23,11 +20,15 @@ body {
 }
 
 .nota{
-  margin: 5px;
-  border-radius: 5px;
-  height: 200px;
-  width: 100px;
   position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 240px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.45);
+  margin: 20px;
+  padding: 15px;
 }
 
 #white{
