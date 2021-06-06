@@ -8,47 +8,47 @@ function App() {
   const notas = [
     {
       nombre: 'RED',
-      link: require('./notes/red.mp3'),
+      link: 'https://www.wordreference.com/audio/en/uk/general/en070562.mp3',
       sostenido: true,
       colorfondo:"red"
     },
     {
       nombre: 'YELLOW',
-      link: require('./notes/yellow.mp3'),
+      link: 'https://www.wordreference.com/audio/en/uk/general/en099842.mp3',
       sostenido: true,
       colorfondo:"yellow"
     },
     {
       nombre: 'BLUE',
-      link: require('./notes/blue.mp3'),
+      link: 'https://www.wordreference.com/audio/en/uk/general/en009029.mp3',
       colorfondo:"blue"
     },
     {
       nombre: 'BLACK',
-      link: require('./notes/black.mp3'),
+      link: 'https://www.wordreference.com/audio/en/uk/general/en008416.mp3',
       sostenido: true,
       colorfondo:"black"
     },
     {
       nombre: 'WHITE',
-      link: require('./notes/white.mp3'),
+      link: 'https://www.wordreference.com/audio/en/uk/general/en097977.mp3',
       sostenido: true,
       colorfondo:"white"
     },
     {
       nombre: 'BROWN',
-      link: require('./notes/brown.mp3'),
+      link: 'https://www.wordreference.com/audio/en/us/us/en011136.mp3',
       sostenido: true,
       colorfondo:"brown"
     },
     {
       nombre: 'GREEN',
-      link: require('./notes/green.mp3'),
+      link: 'https://www.wordreference.com/audio/en/us/us/en040085.mp3',
       colorfondo:"green"
     },
     {
       nombre: 'PURPLE',
-      link: require('./notes/purple.mp3'),
+      link: 'https://www.wordreference.com/audio/en/us/us/en068363.mp3',
       sostenido: true,
       colorfondo:"purple"
     },
@@ -56,7 +56,7 @@ function App() {
 
   const handleClick = (nota) => {
     setSonando(nota.nombre)
-    const sonido = new Audio(nota.link.default)
+    const sonido = new Audio(nota.link)
     sonido.play()
   }
 
