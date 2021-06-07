@@ -13,7 +13,7 @@ function App() {
         nombre: 'PERRO',
         link: 'https://www.wordreference.com/audio/es/Mexico/es147935.mp3',
         sostenido: true,
-        colorfondo:"celeste",
+        colorfondo:"orange",
         texto:"PERRO",
         languague:"español"
       },{
@@ -31,7 +31,7 @@ function App() {
         nombre: 'DOG',
         link: 'https://speechling.com/static/audio/female/russian/russian_2117.mp3',
         sostenido: true,
-        colorfondo:"celeste",
+        colorfondo:"orange",
         texto:"Собака",
         languague:"ruso"
       
@@ -158,19 +158,19 @@ function App() {
           
         ))}
         <div className="micolor"><h3>DOG en 4 idiomas </h3></div>
-      
+        
       {animalinfo.map(animal =>(
 
-<Animal 
-key={Math.random() * 1000}
-animal={animal}
+<div
 
+onClick={() => handleClick(animal)}
+>
 
-
-
+        <Animal 
+        key={Math.random() * 1000}
+        animal={animal}
 />
-
-
+</div>
 
     )
     )}
