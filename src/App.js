@@ -8,45 +8,7 @@ function App() {
 
   const [sonando, setSonando] = useState('')
   
-    const pronunciacionPerro = [
-      {
-        nombre: 'PERRO',
-        link: 'https://www.wordreference.com/audio/es/Mexico/es147935.mp3',
-        sostenido: true,
-        colorfondo:"orange",
-        texto:"PERRO",
-        languague:"español"
-      },{
-        
-          nombre: 'DOG',
-          link: 'https://www.wordreference.com/audio/en/us/us/en026602.mp3',
-          sostenido: true,
-          colorfondo:"orange",
-          texto:"DOG",
-          languague:"ingles"
-        
-      },
-      {
-        
-        nombre: 'DOG',
-        link: 'https://speechling.com/static/audio/female/russian/russian_2117.mp3',
-        sostenido: true,
-        colorfondo:"orange",
-        texto:"Собака",
-        languague:"ruso"
-      
-    },
-    {
-        
-      nombre: 'DOG',
-      link: 'https://speechling.com/static/audio/female/mandarins/mandarins_2117.mp3',
-      sostenido: true,
-      colorfondo:"orange",
-      texto:"狗",
-      languague:"chino"
-    
-    }
-      ]
+ 
 
       const notas = [
     {
@@ -157,26 +119,46 @@ function App() {
           </div>
           
         ))}
-        <div className="micolor"><h3>DOG en 4 idiomas </h3></div>
         
+        <div className="tituloAnimal">
+            <div class="contentAnimal">
+  <div class="contentAnimal__container">
+   
+  <p class="contentAnimal__container__text">
+      Animales
+    </p>
+    
+    <ul class="contentAnimal__container__list">
+      <li class="contentAnimal__container__list__item">Español</li>
+      <li class="contentAnimal__container__list__item">Ingles</li>
+      <li class="contentAnimal__container__list__item">Ruso</li>
+      <li class="contentAnimal__container__list__item">Chino</li>
+    </ul>
+  </div>
+</div>
+
+
+</div>  
+<div className="micolor"><h3>Animales en 4 idiomas</h3></div>
+
+
+
       {animalinfo.map(animal =>(
 
 <div
+/*onClick={() => handleClick(animal)}*/
 
-onClick={() => handleClick(animal)}
 >
-
+<div >
         <Animal 
         key={Math.random() * 1000}
         animal={animal}
 />
 </div>
 
-    )
-    )}
+<div>
 
-
-{pronunciacionPerro.map(nota => (
+{animal.pronunciation.map(nota => (
   <div
     key={Math.random() * 1000}
     className={`btn ${sonando === nota.nombre }`}
@@ -189,6 +171,10 @@ onClick={() => handleClick(animal)}
   </div>
   
 ))}
+</div>
+</div>
+    )
+    )}
         
       </main>
     </div>

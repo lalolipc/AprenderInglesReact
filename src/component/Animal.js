@@ -3,7 +3,7 @@
     const {animal:{nombre,img}}=props;
     return (
         <section className="product">
-          <img src={img} alt={nombre} />
+          <img src={img} alt={nombre} className="tamAnimal"/>
           
       </section>
     );
