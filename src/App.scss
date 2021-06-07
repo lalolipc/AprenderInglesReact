@@ -4,7 +4,7 @@ body {
 
 .container{
   width: 100%;
-  text-align: center;
+  padding-left: 2%;
 }
 
 .titulo{
@@ -129,7 +129,7 @@ nav ul li {
 
   position: relative;
   overflow: hidden;
-  width: 50px;
+  width: 80px;
   height: 160px;
   display: inline-block;
   border-radius: 4px;
@@ -151,7 +151,7 @@ nav ul li {
 
 .content {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 160px;

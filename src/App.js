@@ -141,7 +141,7 @@ function App() {
 
 </div>  
 
-      <div className="micolor"><h3>Presiona un botón y te dira el color en ingles </h3>
+      <div className="micolor"><h3>Presiona un botón  </h3>
 </div>
       <div className="colorseleccionado">{ sonando && <h3> {sonando}</h3>}</div>   
      
@@ -157,7 +157,7 @@ function App() {
           </div>
           
         ))}
-        <div className="micolor"><h3>Ahora veremos como decir perro en 4 idiomas </h3></div>
+        <div className="micolor"><h3>DOG en 4 idiomas </h3></div>
       
       {animalinfo.map(animal =>(
 
