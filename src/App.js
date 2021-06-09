@@ -145,18 +145,17 @@ function App() {
 
       {animalinfo.map(animal =>(
 
-<div
-/*onClick={() => handleClick(animal)}*/
+<div>
+  
 
->
-<div >
+<div onClick={() => handleClick(animal)}>
         <Animal 
         key={Math.random() * 1000}
         animal={animal}
+        onClick={() => handleClick(animal)}
 />
 </div>
 
-<div>
 
 {animal.pronunciation.map(nota => (
   <div
@@ -171,7 +170,6 @@ function App() {
   </div>
   
 ))}
-</div>
 </div>
     )
     )}

@@ -88,6 +88,53 @@ const animalinfo = [
         languague:"chino"
       
       }
+      
+    ]
+    
+    },
+    {
+      img: "https://cdn.pixabay.com/photo/2020/06/08/22/48/birds-5276316_960_720.png",
+      link: "https://pic.pikbest.com/00/24/24/98j888piC8VG.mp3",
+      nombre:"BIRD",
+      pronunciation:[
+        {
+          nombre: 'BIRD',
+          link: 'https://educalingo.com/audio/es/77172.mp3',
+          sostenido: true,
+          colorfondo:"orange",
+          texto:"Pajaro",
+          languague:"español"
+        },{
+          
+            nombre: 'BIRD',
+            link: 'https://educalingo.com/audio/en/18653.mp3',
+            sostenido: true,
+            colorfondo:"orange",
+            texto:"Bird",
+            languague:"ingles"
+          
+        },
+        {
+          
+          nombre: 'BIRD',
+          link: 'https://educalingo.com/audio/ru/86113.mp3',
+          sostenido: true,
+          colorfondo:"orange",
+          texto:"птица-ptitsa",
+          languague:"ruso"
+        
+      },
+      {
+          
+        nombre: 'BIRD',
+        link: 'https://educalingo.com/audio/zh/168213.mp3',
+        sostenido: true,
+        colorfondo:"orange",
+        texto:"鸟  [niǎo]",
+        languague:"chino"
+      
+      }
+      
     ]
     
     }
